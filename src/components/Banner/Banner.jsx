@@ -1,5 +1,5 @@
 import './Banner.css';
-import miFoto from '../../assets/miFoto.png';
+import MiFoto from '../../assets/MiFoto.png';
 const Banner = () => {
     return (
         <section className="hero-section">
@@ -16,7 +16,7 @@ const Banner = () => {
 */}
 
                     <img
-                        src={miFoto}
+                        src={MiFoto}
                         alt="Foto de Perfil"
                         className="profile-photo"
                     />
