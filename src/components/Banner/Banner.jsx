@@ -1,5 +1,5 @@
 import './Banner.css';
-import MiFoto from '../../assets/MiFoto.png';
+import MiFoto from '../../assets/MiFoto.jpeg';
 const Banner = () => {
     return (
         <section className="hero-section">
