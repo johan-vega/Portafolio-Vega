@@ -12,11 +12,12 @@ const Navbar = () => {
             {/* Enlaces de Navegación */}
             <div className={`navbar-links ${isOpen ? "open" : ""}`}>
                 {/* Al hacer clic en un enlace en móvil, cerramos el menú */}
-                <a href="#sobre-mi" onClick={() => setIsOpen(false)}>Perfil</a>
-                <a href="#tech-stack" onClick={() => setIsOpen(false)}>Tech Stack</a>
-                <a href="#proyectos" onClick={() => setIsOpen(false)}>Proyectos</a>
-                <a href="#servicios" onClick={() => setIsOpen(false)}>Servicios</a>
-                <a href="#contacto" onClick={() => setIsOpen(false)}>Contacto</a>
+                <a href="#sobre-mi" onClick={() => setIsOpen(false)}>Sobre Mí</a>
+                <a href="#tech-stack" onClick={() => setIsOpen(false)}>Certificados</a>
+                <a href="#proyectos" onClick={() => setIsOpen(false)}>Contactos</a>
+                <a href="#servicios" onClick={() => setIsOpen(false)}>Habilidades</a>
+                <a href="#contacto" onClick={() => setIsOpen(false)}>Proyectos</a>
+                <a href="#contacto" onClick={() => setIsOpen(false)}>Servicios  </a>
             </div>
             {/* Ícono de Menú Hamburguesa (Solo visible en móviles) */}
             <div className="navbar-toggle" onClick={() => setIsOpen(!isOpen)}>

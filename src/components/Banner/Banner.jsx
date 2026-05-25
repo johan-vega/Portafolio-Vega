@@ -23,30 +23,20 @@ const Banner = () => {
                 </div>
                 {/* 3. Título Principal */}
                 <h1 className="hero-title">
-                    Giancarlos <br />
-                    <span className="text-cyan">Barboza</span>
+                    Andre <br />
+                    <span className="text-cyan">Vega</span>
                 </h1>
                 {/* 4. Subtítulo (Rol) */}
                 <h2 className="hero-subtitle">
-                    Consultor e Instructor BI - Software | MOS Excel Expert | Power
-
-                    BI Data Analyst | Ingeniero de Sistemas</h2>
+                    Estudiante de 3er ciclo de Desarrollo de paginas web en SENATI</h2>
                 {/* 5. Descripción */}
                 <p className="hero-description">
-                    Construyo sistemas inteligentes que automatizan procesos,
-
-                    analizan
-
-                    datos y transforman la información. También desarrollo
-                    aplicaciones web funcionales para resolver necesidades reales.
-
-                    Consultoría de Software y BI para empresas.
+                    Construyo Proyectos web modernos y responsivos utilizando las últimas tecnologías del mercado.
+                    Mi pasión es crear experiencias digitales únicas que destaquen en el mundo online.
                 </p>
                 {/* 6. Botones de Acción */}
                 <div className="hero-buttons">
-                    <a href="#proyectos" className="btn btn-primary">Ver
-
-                        Proyectos</a>
+                    <a href="#proyectos" className="btn btn-primary">Ver Proyectos</a>
 
                     <a href="#contacto" className="btn btn-secondary">Contáctame</a>
 
