@@ -1,11 +1,17 @@
-
+import Navbar from './components/Navbar/Navbar';
 import './App.css'
+import './index.css';
+import Banner from './components/Banner/Banner';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Navbar />
+      <Banner />
+      {/* El resto de secciones irán aquí debajo. Ejemplo: <Footer />*/
+      }
 
     </>
   )
