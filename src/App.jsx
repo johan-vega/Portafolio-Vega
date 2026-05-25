@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar';
-import './App.css'
+import './App.css';
 import './index.css';
 import Banner from './components/Banner/Banner';
 
