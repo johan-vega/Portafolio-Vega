@@ -23,18 +23,12 @@ TARJETA 1: PERFIL PROFESIONAL
                             <h3>Perfil profesional</h3>
                         </div>
                         <p className="card-text">
-                            Ingeniero de Sistemas Comptacionales, con experiencia en la
-                            docencia de más de 15 años, dictando clases de forma presencial y virtual
-                            en diferentes instituciones educativas de prestigio y con experiencia
-                            profesional de más de 11 años.
+                            Estudiante de Informatica y Desarrollo de paginas web cursando el 3er ciclo en SENATI, cumpliendo satisfactoriamente el 100% de los cursos del ciclo.  <br /><br />
                             <br /><br />
-                            Cuento la Certificación Internacional en Microsoft Office
-                            Specialist (MOS) Excel Expert y PL - 300 Data Analyst Associate.
-                            Instructor CISCO y ORACLE.<br /><br />
-                            Consultoría y experiencia en desarrollo de software,
-                            utilizando tecnologías como React, Laravel, NodeJS, ExpressJS, MySQL,
-                            PostGreSQL, etc. y en desarrollo de dashboards interactivos mediante
-                            Power BI, DAX, Power Query, modelado de datos en SQL y automatizaciones
+                            experiencia en desarrollo de software,
+                            utilizando tecnologías como React, Laravel, NodeJS, HTML, MySQL,
+                            CSS, etc. y en desarrollo de dashboards interactivos mediante
+                            FIGMA, modelado de datos en SQL y automatizaciones
                             con Python.
                         </p>
                     </div>
@@ -56,10 +50,10 @@ TARJETA 1: PERFIL PROFESIONAL
                             {/* Ítem de Educación 1 */}
                             <div className="timeline-item">
                                 <div className="timeline-header">
-                                    <h4>Ingeniería de Sistemas Computacionales</h4>
-                                    <span className="badge badge-outline">Titulado</span>
+                                    <h4>INFORMATICA Y DESARROLLO DE APLICACIONES WEB </h4>
+                                    <span className="badge badge-outline">En Curso</span>
                                 </div>
-                                <span className="timeline-date">UNIVERSIDAD TECNOLÓGICA DEL PERÚ</span>
+                                <span className="timeline-date">SENATI</span>
                             </div>
                             {/* Ítem de Educación 2 */}
                             <div className="timeline-item">
