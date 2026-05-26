@@ -1,98 +1,130 @@
 /* =========================================
-ESTILOS GENERALES DEL NAVBAR
+NAVBAR
 ========================================= */
 .navbar {
+    width: min(1180px, calc(100% - 2rem));
+    margin: 1rem auto 0;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    background-color: #0b0f19;
-    /* Fondo oscuro elegante */
-    color: #ffffff;
     position: sticky;
-    top: 0;
+    top: 1rem;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--text-strong);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    background: rgba(var(--surface-900-rgb), 0.72);
+    backdrop-filter: blur(22px);
+    box-shadow: var(--shadow-soft);
 }
 
-/* =========================================
-ESTILOS DEL LOGO
-========================================= */
+.navbar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(90deg, transparent, rgba(var(--accent-primary-rgb), 0.08), transparent);
+    pointer-events: none;
+}
+
 .navbar-logo {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     font-weight: 700;
-    cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: -0.04em;
+    position: relative;
+    z-index: 1;
 }
 
-.text-cyan {
-    color: #00d8ff;
-    /* Color de acento (Cyan) */
-}
-
-/* =========================================
-ESTILOS DE LOS ENLACES (DESKTOP)
-========================================= */
 .navbar-links {
     display: flex;
-    gap: 2.5rem;
+    align-items: center;
+    gap: 1.2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .navbar-links a {
-    color: #a0aab2;
+    position: relative;
+    color: var(--text-muted);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.96rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    padding: 0.55rem 0.9rem;
+    border-radius: var(--radius-pill);
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    left: 0.9rem;
+    right: 0.9rem;
+    bottom: 0.4rem;
+    height: 2px;
+    border-radius: var(--radius-pill);
+    background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
 }
 
 .navbar-links a:hover {
-    color: #ffffff;
+    color: var(--text-strong);
+    background-color: rgba(var(--accent-primary-rgb), 0.06);
+    transform: translateY(-1px);
 }
 
-/* =========================================
-BOTÓN HAMBURGUESA (Oculto en PC)
-========================================= */
+.navbar-links a:hover::after {
+    transform: scaleX(1);
+}
+
 .navbar-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    gap: 6px;
+    gap: 5px;
+    position: relative;
+    z-index: 1;
 }
 
 .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff;
-    border-radius: 2px;
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-strong);
+    border-radius: var(--radius-pill);
     transition: all 0.3s ease;
 }
 
-/* =========================================
-MEDIA QUERY: VERSIÓN MÓVIL Y TABLET
-========================================= */
 @media (max-width: 768px) {
+    .navbar {
+        padding: 0.95rem 1.2rem;
+        top: 0.75rem;
+    }
+
     .navbar-toggle {
         display: flex;
-        /* Mostramos el botón hamburguesa */
     }
 
     .navbar-links {
         display: none;
-        /* Ocultamos los enlaces horizontales */
         flex-direction: column;
+        align-items: stretch;
         position: absolute;
-        top: 100%;
+        top: calc(100% + 0.85rem);
         left: 0;
         width: 100%;
-        background-color: #0b0f19;
-        padding: 2rem 0;
-        text-align: center;
-        gap: 2rem;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        background: rgba(var(--surface-900-rgb), 0.96);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
     }
 
-    /* Cuando el estado isOpen es true, se añade la clase "open" */
+    .navbar-links a {
+        text-align: center;
+    }
+
     .navbar-links.open {
         display: flex;
     }

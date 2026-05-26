@@ -1,8 +1,173 @@
-/* CREAR ACA LAS VARIABLES PARA TODOS MIS COMPONENTES */
-/* En index.css */
+:root {
+
+    /* Cambia este color para el fondo general de toda la web */
+    --bg-950: #140d0a;
+
+    /* Cambia este color para fondos secundarios y zonas profundas */
+    --bg-900: #1d130f;
+
+    /* Cambia este color para tarjetas, paneles y navbar */
+    --surface-900: #2a1d17;
+    --surface-900-rgb: 42, 29, 23;
+
+    /* Cambia este color para variaciones internas de tarjetas */
+    --surface-800: #392721;
+    --surface-800-rgb: 57, 39, 33;
+
+    /* Cambia este color para el texto principal */
+    --text-strong: #fff8f1;
+    --text-strong-rgb: 255, 248, 241;
+
+    /* Cambia este color para texto secundario suave */
+    --text-soft: #e6d6c8;
+
+    /* Cambia este color para parrafos y texto menos importante */
+    --text-muted: #b79b87;
+
+    /* Cambia este color para botones principales, enlaces destacados y nombre */
+    --accent-primary: #f0c9a9;
+    --accent-primary-rgb: 240, 201, 169;
+
+    /* Cambia este color para iconos, badges, lineas decorativas y detalles */
+    --accent-secondary: #b97a52;
+    --accent-secondary-rgb: 185, 122, 82;
+
+    /* Cambia este color para estados de exito o resaltados suaves */
+    --accent-tertiary: #e7a977;
+    --accent-tertiary-rgb: 231, 169, 119;
+
+    /* Cambia este color para estados en progreso */
+    --warning: #f1bf72;
+    --warning-rgb: 241, 191, 114;
+
+    /* Cambia esta variable para bordes y lineas generales */
+    --line: rgba(var(--accent-primary-rgb), 0.12);
+    --line-strong: rgba(var(--accent-primary-rgb), 0.22);
+
+    /* Sombras globales */
+    --shadow-soft: 0 18px 40px rgba(12, 7, 5, 0.24);
+    --shadow-strong: 0 28px 60px rgba(12, 7, 5, 0.38);
+
+    /* Gradientes base del sitio */
+    --hero-gradient:
+        radial-gradient(circle at 20% 20%, rgba(var(--accent-secondary-rgb), 0.28) 0%, transparent 28%),
+        radial-gradient(circle at 82% 12%, rgba(var(--accent-primary-rgb), 0.12) 0%, transparent 24%),
+        linear-gradient(135deg, #0f0907 0%, #211510 48%, #130c09 100%);
+    --panel-gradient: linear-gradient(160deg, rgba(var(--surface-800-rgb), 0.92) 0%, rgba(var(--surface-900-rgb), 0.98) 100%);
+    --panel-gradient-soft: linear-gradient(180deg, rgba(var(--surface-800-rgb), 0.84) 0%, rgba(var(--surface-900-rgb), 0.96) 100%);
+
+    /* Radios */
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+    --radius-pill: 999px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, rgba(var(--accent-secondary-rgb), 0.08), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(var(--accent-primary-rgb), 0.06), transparent 26%),
+        linear-gradient(180deg, var(--bg-950) 0%, var(--bg-900) 100%);
+    color: var(--text-strong);
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(rgba(var(--accent-primary-rgb), 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(var(--accent-primary-rgb), 0.025) 1px, transparent 1px);
+    background-size: 120px 120px;
+    mask-image: radial-gradient(circle at center, black 35%, transparent 100%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+a,
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    position: relative;
+    scroll-margin-top: 120px;
+}
+
+::selection {
+    background: rgba(var(--accent-primary-rgb), 0.25);
+    color: var(--text-strong);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-900);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(var(--accent-secondary-rgb), 0.75);
+    border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-secondary);
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    margin-bottom: 2.5rem;
+    color: var(--text-strong);
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 84px;
+    height: 4px;
+    margin-top: 0.9rem;
+    border-radius: var(--radius-pill);
+    background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center.section-title::after,
+.text-center .section-title::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-cyan {
+    color: var(--accent-primary);
 }

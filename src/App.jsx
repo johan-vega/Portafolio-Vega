@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
 import './index.css';
@@ -6,10 +5,11 @@ import Banner from './components/Banner/Banner';
 import Perfil from './components/Perfil/Perfil';
 import Habilidades from './components/Habilidades/Habilidades';
 import Proyectos from './components/Proyectos/Proyectos';
+import Servicios from './components/Servicios/Servicios';
+import Contactos from './components/Contactos/Contactos';
+import Footer from './components/Footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Navbar />
@@ -17,9 +17,9 @@ function App() {
       <Perfil />
       <Habilidades />
       <Proyectos />
-      {/* El resto de secciones irán aquí debajo. Ejemplo: <Footer />*/
-      }
-
+      <Servicios />
+      <Contactos />
+      <Footer />
     </>
   )
 }
