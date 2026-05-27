@@ -32,8 +32,8 @@ const Contactos = () => {
                     <span className="contacto-badge">Contacto</span>
                     <h2 className="section-title">Hablemos de tu idea o proyecto</h2>
                     <p className="contacto-text">
-                        Dejé esta sección lista con placeholders para que solo reemplaces tus enlaces
-                        reales de WhatsApp, Gmail y GitHub sin tocar la estructura del diseño.
+                        ¿Tienes un proyecto en mente o necesitas ayuda para automatizar tus flujos de trabajo?
+                        Me encantaría escucharte.
                     </p>
                 </div>
 
