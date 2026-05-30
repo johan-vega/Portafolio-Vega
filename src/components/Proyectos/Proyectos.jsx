@@ -3,6 +3,7 @@ import correos from '../../assets/correos.png';
 import cafeteria from '../../assets/cafeteria.png';
 import matricula from '../../assets/matricula.png';
 import scc from '../../assets/scc.png';
+import vendefacil from '../../assets/vendefacil.png';
 
 const Proyectos = () => {
     const proyectosData = [
@@ -41,6 +42,15 @@ const Proyectos = () => {
             tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'Laravel', 'MySQL'],
             linkDemo: 'https://entregable-grupo3.infinityfreeapp.com/login',
             linkCodigo: 'https://github.com/johan-vega/entregableGrupo3'
+        },
+        {
+            id: 5,
+            imagen: vendefacil,
+            titulo: 'Tienda Virtual para accesorios, ropa y tecnologia',
+            descripcion: 'Tienda virtual para la venta de accesorios, ropa y tecnología, con catálogo de productos, Solo FrontEnd con REACT',
+            tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'REACT'],
+            linkDemo: 'https://vende-facil.vercel.app/#/',
+            linkCodigo: 'https://github.com/johan-vega/VendeFacil'
         }
     ];
 

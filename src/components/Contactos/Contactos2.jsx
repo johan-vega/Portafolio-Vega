@@ -86,7 +86,7 @@ COLUMNA IZQUIERDA: INFORMACIÓN
                                 </div>
                                 <div>
                                     <span className="item-label">Email</span>
-                                    <p className="item-text">gbarboza.es@gmail.com</p>
+                                    <p className="item-text">johan.vi.em.99@gmail.com</p>
                                 </div>
                             </div>
                             {/* Ítem Ubicación */}
