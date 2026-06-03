@@ -4,6 +4,7 @@ import cafeteria from '../../assets/cafeteria.png';
 import matricula from '../../assets/matricula.png';
 import scc from '../../assets/scc.png';
 import vendefacil from '../../assets/vendefacil.png';
+import ClafioPeru from '../../assets/ClafioPeru.png';
 
 const Proyectos = () => {
     const proyectosData = [
@@ -51,6 +52,15 @@ const Proyectos = () => {
             tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'REACT'],
             linkDemo: 'https://vende-facil.vercel.app/#/',
             linkCodigo: 'https://github.com/johan-vega/VendeFacil'
+        },
+        {
+            id: 6,
+            imagen: ClafioPeru,
+            titulo: 'Tienda Virtual de emprendimiento de Ropa Oversize',
+            descripcion: 'Tienda virtual para la venta de ropa oversize, con catálogo de productos y gestion de pedidos, panel de administrador, sistema Front y Backend, implementado orginalmente con react y Laravel, pero unificado en un solo proyecto en Laravel para facilitar su despliegue en hosting gratuito.',
+            tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'REACT', 'Laravel', 'MySQL'],
+            linkDemo: 'https://clafioperu.freedev.app/?i=1',
+
         }
     ];
 
